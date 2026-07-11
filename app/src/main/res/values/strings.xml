@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dual File Manager</string>
+    <string name="choose_folder">Choose folder</string>
+    <string name="up">Up</string>
+    <string name="new_folder">New folder</string>
+    <string name="rename">Rename</string>
+    <string name="copy">Copy</string>
+    <string name="move">Move</string>
+    <string name="delete">Delete</string>
+    <string name="refresh">Refresh</string>
+    <string name="search">Search</string>
+    <string name="no_folder_selected">No folder open</string>
+</resources>

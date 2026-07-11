@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#14171A</color>
+    <color name="surface">#1D2126</color>
+    <color name="surface_alt">#20252B</color>
+    <color name="divider">#2A2F35</color>
+    <color name="text_primary">#E7EAED</color>
+    <color name="text_muted">#8992A0</color>
+    <color name="accent_active">#3DDC97</color>
+    <color name="accent_selected">#E8A33D</color>
+    <color name="folder_color">#5AA9E6</color>
+</resources>
