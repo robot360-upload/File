@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/paneLeft"
+            layout="@layout/pane_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <include
+            android:id="@+id/paneRight"
+            layout="@layout/pane_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_alt"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <Button android:id="@+id/btnNewFolder" style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/new_folder" android:textAllCaps="false"
+                android:textColor="@color/text_primary" android:textSize="12sp" />
+
+            <Button android:id="@+id/btnRename" style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/rename" android:textAllCaps="false"
+                android:textColor="@color/text_primary" android:textSize="12sp" />
+
+            <Button android:id="@+id/btnCopy" style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/copy" android:textAllCaps="false"
+                android:textColor="@color/text_primary" android:textSize="12sp" />
+
+            <Button android:id="@+id/btnMove" style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/move" android:textAllCaps="false"
+                android:textColor="@color/text_primary" android:textSize="12sp" />
+
+            <Button android:id="@+id/btnDelete" style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/delete" android:textAllCaps="false"
+                android:textColor="#E06666" android:textSize="12sp" />
+
+            <Button android:id="@+id/btnRefresh" style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/refresh" android:textAllCaps="false"
+                android:textColor="@color/text_primary" android:textSize="12sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
